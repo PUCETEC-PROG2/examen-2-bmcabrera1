@@ -1,11 +1,13 @@
 {% extends "base.html" %}
 {% block title %}{{ pokemon }}{% endblock title %}
 {% block content %}
-    <p class="py-4">Has elegido el pokemon: <strong>{{ pokemon | capfirst }}</strong></p>
-    <h3>Características:</h3>
+    <p class="py-4">Has elegido la pelicula: <strong>{{ movie.title | capfirst }}</strong></p>
+    <h3>Descripción:</h3>
     <ul>
-        <li>Tipo: {{ pokemon.type }}</li>
-        <li>Peso: {{ pokemon.weight }} kg.</li>
-        <li>Altura: {{ pokemon.height }} cm.</li>
+        <li>Gender: {{ movie.gender }}</li>
+        <li>Director's Name: {{ movie.directorName }}</li>
+        <li>Year: {{ movie.year }}</li>
+        <li>Sinopsis: {{ movie.sinopsis }}</li>
+
     </ul>
 {% endblock content %}

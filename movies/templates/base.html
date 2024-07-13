@@ -8,8 +8,8 @@
     </head>
     <body>
         <div class="container">
-            <div class="bg-primary text-secondary p-4 text-center">
-                <img src="{% static "logo.svg" %}" alt="">
+            <div class="bg-primary text-secondary p-4 text-center">                    
+                <img class="img-fluid"src="{% static 'logo.jpg' %}" alt="logo">
             </div>
             {% block content %}{% endblock content %}
         </div>
